@@ -82,7 +82,7 @@ miniature.classList.add("thumbnails");
 row.append(miniature);
 
 // creazione elementi item e immagine
-for (let i = 0; i < immagini.length; i++) {
+for (let i = 0; i < paesaggi.length; i++) {
   // creazione elemento item
   const item = document.createElement("div");
   // aggiungo classe item
@@ -112,14 +112,26 @@ for (let i = 0; i < immagini.length; i++) {
 
   // inserisco le immagini dell'array nel dom
   const img = document.createElement("img");
-  img.src = `img/${immagini[i]}`;
+  img.src = `img/${paesaggi[i].immagine}`;
   img.alt = `Paesaggio ${i + 1}`;
   // inserisco immagine in item
   item.append(img);
 
+  // creazione elementi titolo e descrizione - inserimento in classe item
+  // -- titolo
+  const titolo = document.createElement("h2");
+  titolo.classList.add("titolo");
+  titolo.innerHTML = `${paesaggi[i].titolo}`;
+  item.append(titolo);
+  // -- descrizione
+  const descrizione = document.createElement("p");
+  descrizione.classList.add("descrizione");
+  descrizione.innerHTML = `${paesaggi[i].descrizione}`;
+  item.append(descrizione);
+
   // inserisco immagini nelle miniature
   const imgMiniature = document.createElement("img");
-  imgMiniature.src = `img/${immagini[i]}`;
+  imgMiniature.src = `img/${paesaggi[i].immagine}`;
   imgMiniature.alt = `Paesaggio ${i + 1}`;
   // inserisco immagine in miniatura
   miniatura.append(imgMiniature);
