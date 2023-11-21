@@ -42,23 +42,17 @@
   display: block;
 }
 
-.item .titolo,
-.descrizione {
+.item .container-titolo {
   position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
   color: white;
 }
 
 .item .titolo {
-  bottom: 60px;
-  right: 20px;
+  margin-bottom: 10px;
   color: lawngreen;
-}
-
-.item .descrizione {
-  width: 80%;
-  bottom: 20px;
-  right: 20px;
-  text-align: right;
 }
 
 .prev,

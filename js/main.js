@@ -118,16 +118,20 @@ for (let i = 0; i < paesaggi.length; i++) {
   item.append(img);
 
   // creazione elementi titolo e descrizione - inserimento in classe item
+  const containerTitolo = document.createElement("div");
+  containerTitolo.classList.add("container-titolo");
   // -- titolo
   const titolo = document.createElement("h2");
   titolo.classList.add("titolo");
   titolo.innerHTML = `${paesaggi[i].titolo}`;
-  item.append(titolo);
+  containerTitolo.append(titolo);
   // -- descrizione
   const descrizione = document.createElement("p");
   descrizione.classList.add("descrizione");
   descrizione.innerHTML = `${paesaggi[i].descrizione}`;
-  item.append(descrizione);
+  containerTitolo.append(descrizione);
+  // append container ad item
+  item.append(containerTitolo);
 
   // inserisco immagini nelle miniature
   const imgMiniature = document.createElement("img");
