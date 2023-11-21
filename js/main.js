@@ -13,7 +13,7 @@ function cambioImmagine() {
 }
 
 function play() {
-  if (contImmagine + 1 >= immagini.length) {
+  if (contImmagine + 1 >= paesaggi.length) {
     // la nuova posizione è 0
     nuovaPosizione = 0;
   } else {
@@ -171,7 +171,7 @@ alto.addEventListener("click", function () {
   // se il contatore è inferiore a 0
   if (contImmagine - 1 < 0) {
     // la nuova posizione è l'ultima immagine dell'array
-    nuovaPosizione = immagini.length - 1;
+    nuovaPosizione = paesaggi.length - 1;
   } else {
     // La nuova posizione è l'immagine precedente
     nuovaPosizione = contImmagine - 1;
