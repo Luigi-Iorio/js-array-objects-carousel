@@ -37,8 +37,40 @@ items.classList.add("items");
 // appendo al container
 row.append(items);
 
-// creazione array di immagini
-const immagini = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
+// array di oggetti - immagine, titolo, descrizione
+const paesaggi = [
+  {
+    immagine: "01.jpg",
+    titolo: "Paesaggio numero uno",
+    descrizione:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed consectetur massa. Donec dapibus ex sit amet diam commodo, eget porttitor diam dictum.",
+  },
+  {
+    immagine: "02.jpg",
+    titolo: "Paesaggio numero due",
+    descrizione:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed consectetur massa. Donec dapibus ex sit amet diam commodo, eget porttitor diam dictum. Aliquam porta accumsan augue, vel dictum erat volutpat a. Etiam sed egestas elit, et elementum ipsum. Aenean eu risus in massa fermentum condimentum. Duis facilisis quis lectus ut facilisis. Ut volutpat ipsum lectus, at suscipit augue maximus sed.",
+  },
+  {
+    immagine: "03.jpg",
+    titolo: "Paesaggio numero tre",
+    descrizione:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed consectetur massa.",
+  },
+  {
+    immagine: "04.jpg",
+    titolo: "Paesaggio numero quattro",
+    descrizione:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed consectetur massa. Donec dapibus ex sit amet diam commodo, eget porttitor diam dictum. Aliquam porta accumsan augue, vel dictum erat volutpat a. Etiam sed egestas elit, et elementum ipsum. Aenean eu risus in massa fermentum condimentum. Duis facilisis quis lectus ut facilisis. Ut volutpat ipsum lectus, at suscipit augue maximus sed.",
+  },
+  {
+    immagine: "05.jpg",
+    titolo: "Paesaggio numero cinque",
+    descrizione:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed consectetur massa. Donec dapibus ex sit amet diam commodo, eget porttitor diam dictum.",
+  },
+];
+
 // contatore immagini
 let contImmagine = 0;
 
